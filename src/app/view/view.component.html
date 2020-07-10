@@ -1,0 +1,17 @@
+<p>view works!</p>
+<h1>Employee Details ... </h1>
+
+<div class="container">
+    <table class="table table-bordered">
+        <tr>
+            <th>ID</th><th>Name</th><th>Designation</th><th>Join Date</th><th>Salary</th>
+        </tr>
+        <tr *ngFor="let emp of emplist">
+            <td>{{ emp.eid }}</td>
+            <td>{{ emp.ename }}</td>
+            <td>{{ emp.desig }}</td>
+            <td>{{ emp.joindate|date }}</td>
+            <td>{{ emp.salary }}</td>
+        </tr>
+    </table>
+</div>
